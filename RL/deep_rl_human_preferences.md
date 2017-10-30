@@ -10,3 +10,10 @@
 	- can learn complex novel behaviors.
 
 ## Introduction
+
+**Challenges**
+
+- goals complex, pooly-defined or hard to specify;
+- reward function -> behaviors that optimize reward function without achieving goals;
+
+> This difficulty underlines recent concerns about misalignment between reward values and the objectives of RL systems.
