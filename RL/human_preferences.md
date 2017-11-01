@@ -32,3 +32,33 @@
 **Basic idea**
 
 ![approach illustration](https://github.com/txzhao/Paper-Notes/blob/master/RL/fig/approach_scheme.PNG)
+
+
+**Contributions**
+
+1. solve tasks for which we can only recognize but not demonstrate the desired behaviors;
+2. allow non-expert agent training;
+3. scale to larger problems;
+4. economical with user feedback.
+
+**Related work**
+
+two lines of work: (1) RL from human ratings or rankings; (2) general problemn of RL from preferences rather than absolute reward values.
+
+*close-related paper:*
+
+(1) [Active preference learning-based
+reinforcement learning](https://arxiv.org/abs/1208.0984); (2) [Programming by
+feedback](http://proceedings.mlr.press/v32/schoenauer14.pdf); (3) [A Bayesian approach for policy learning from
+trajectory preference queries](https://papers.nips.cc/paper/4805-a-bayesian-approach-for-policy-learning-from-trajectory-preference-queries).
+
+*diffs with (1)-(2)*: 
+
+a) elicit preferences over whole trajectories rather than short clips; b) change training procedure to cope with nonlinear reward models and modern deep RL.
+
+*diffs with (3)*: 
+
+a) fit reward function by Bayesian inference; b) produce trajectories using MAP estimate of the target policy instead of RL -> involve 'synthetic' human feedback drawn from Bayesian model.
+
+## Preliminaries and Method
+
