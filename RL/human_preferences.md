@@ -31,3 +31,4 @@
 
 **Basic idea**
 
+![approach illustration](https://github.com/txzhao/Paper-Notes/blob/master/RL/fig/approach_scheme.PNG)
