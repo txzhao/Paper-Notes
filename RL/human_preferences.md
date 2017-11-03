@@ -96,7 +96,10 @@ one preferable over the others -> *mu* puts all mass on that choice; equally pre
 
 **Fitting the reward function (step 3)**
 
+assumption: human’s probability of preferring a segment *sigma^i* depends exponentially on the value of the latent reward summed over the length of the clip.
 
+![Equation 1](https://github.com/txzhao/Paper-Notes/blob/master/RL/fig/eq1.PNG)
 
+![Equation 2](https://github.com/txzhao/Paper-Notes/blob/master/RL/fig/eq2.PNG)
 
 
