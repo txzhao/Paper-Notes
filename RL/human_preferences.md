@@ -62,3 +62,41 @@ a) fit reward function by Bayesian inference; b) produce trajectories using MAP 
 
 ## Preliminaries and Method
 
+**Agent goal**
+
+to produce trajectories which are preferred by the human, while making as few queries as possible to the human.
+
+**Work flow**
+
+at each point maintains two deep NNs - policy *pi*: O -> A; reward estimate *r\_hat*: O x A -> R. 
+
+*Update procedure (asyn):*
+
+1. policy *pi* => env => trajectories *tau* = {*tau^1*,..., *tau^i*}. Then update *pi* by a traditional RL algorithm to maximize the sum of predicted rewards *r\_t* = *r\_hat*(*o\_t*, *a\_t*);
+2. select segment pairs *sigma* = (*sigma^1*, *sigma^2*) from *tau*. *sigma* => human comparison => labeled data;
+3. update *r\_hat* with labeled data by supervised learning.
+
+> step 1 => trajectory *tau* => step 2 => human comparison => step 3 => parameters for *r\_hat* => step 1 => ....
+
+**Policy optimization (step 1)**
+
+subtlety:non-stationary reward function *r\_hat* -> methods robust to changes in reward function.
+
+A2C => Atari, TRPO => MuJoCo.
+
+use parameter settings that work well for traditional RL tasks; only adjust the entropy bonus for TRPO (improve inadequate exploration); normalize rewards to zero mean and constand std. 
+
+**Preference eliciation (step 2)**
+
+clips of trajectory segments for 1 to 2 seconds long.
+
+data struct: triples (*sigma^1*, *sigma^2*, *mu*), *mu* - distribution over {1, 2}.
+
+one preferable over the others -> *mu* puts all mass on that choice; equally preferable -> *mu* uniform; incomparable -> skip saving triples.
+
+**Fitting the reward function (step 3)**
+
+
+
+
+
