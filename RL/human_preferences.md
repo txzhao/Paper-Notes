@@ -110,5 +110,20 @@ one preferable over the others -> *mu* puts all mass on that choice; equally pre
 2. validation set ratio 1/e; employ *l\_2* regularization, and tune regularization coefficient -> validation loss = 1.1~1.5 training loss; dropout in some domains;
 3. assume 10% chance that human responds uniformly at random;
 
-**Selecting Queries**
+**Selecting queries**
+
+*pipeline:* sample trajectory segments of length k -> predict preference by base reward predictor in our ensemble -> select trajectories with the highest variance across ensemble members
+
+*future work:* query based on the expected value of information of query.
+
+*Related articles:* 
+
+1. [APRIL: Active Preference-learning based Reinforcement Learning](https://arxiv.org/abs/1208.0984)
+2. [Active reinforcement learning: Observing rewards at a cost](http://www.filmnips.com/wp-content/uploads/2016/11/FILM-NIPS2016_paper_30.pdf)
+
+> At each time-step, the agent chooses both an action and whether to observe the
+reward in the next time-step. If the agent chooses to observe the reward, then it
+pays the “query cost” c > 0. The agent’s objective is to maximize total reward
+minus total query cost.
+
 
