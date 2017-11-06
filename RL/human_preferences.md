@@ -80,7 +80,7 @@ at each point maintains two deep NNs - policy *pi*: O -> A; reward estimate *r\_
 
 **Policy optimization (step 1)**
 
-subtlety:non-stationary reward function *r\_hat* -> methods robust to changes in reward function.
+*subtlety:* non-stationary reward function *r\_hat* -> methods robust to changes in reward function.
 
 A2C => Atari, TRPO => MuJoCo.
 
@@ -90,16 +90,25 @@ use parameter settings that work well for traditional RL tasks; only adjust the 
 
 clips of trajectory segments for 1 to 2 seconds long.
 
-data struct: triples (*sigma^1*, *sigma^2*, *mu*), *mu* - distribution over {1, 2}.
+*data struct:* triples (*sigma^1*, *sigma^2*, *mu*), *mu* - distribution over {1, 2}.
 
 one preferable over the others -> *mu* puts all mass on that choice; equally preferable -> *mu* uniform; incomparable -> skip saving triples.
 
 **Fitting the reward function (step 3)**
 
-assumption: human’s probability of preferring a segment *sigma^i* depends exponentially on the value of the latent reward summed over the length of the clip.
+*assumption:* human’s probability of preferring a segment *sigma^i* depends exponentially on the value of the latent reward summed over the length of the clip.
 
 ![Equation 1](https://github.com/txzhao/Paper-Notes/blob/master/RL/fig/eq1.PNG)
 
+(no discount of reward <- human being indifferent about when things happen in the trajectory segment; could consider discounting.)
+
 ![Equation 2](https://github.com/txzhao/Paper-Notes/blob/master/RL/fig/eq2.PNG)
 
+*modifications:*
+
+1. ensemble of predictors -> independently normalize base predictors and then average results;
+2. validation set ratio 1/e; employ *l\_2* regularization, and tune regularization coefficient -> validation loss = 1.1~1.5 training loss; dropout in some domains;
+3. assume 10% chance that human responds uniformly at random;
+
+**Selecting Queries**
 
