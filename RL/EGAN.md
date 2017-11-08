@@ -39,6 +39,8 @@ where the regularization term *D\_KL* has the following form:
 
 ![egan](https://github.com/txzhao/Paper-Notes/blob/master/RL/fig/egan-struct.PNG)
 
+**Algorithm**
 
+![egan](https://github.com/txzhao/Paper-Notes/blob/master/RL/fig/egan-pseudocode.PNG)
 
 
