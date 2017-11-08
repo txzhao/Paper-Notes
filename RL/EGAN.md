@@ -17,4 +17,28 @@
 
 ## Enhanced GAN
 
+**Fomulas**
+
+the training data for RL tasks:
+
+![Equation 1](https://github.com/txzhao/Paper-Notes/blob/master/RL/fig/egan-eq1.PNG)
+
+the generated data:
+
+![Equation 2](https://github.com/txzhao/Paper-Notes/blob/master/RL/fig/egan-eq2.PNG)
+
+the value function for GAN:
+
+![Equation 4](https://github.com/txzhao/Paper-Notes/blob/master/RL/fig/egan-eq4.PNG)
+
+where the regularization term *D\_KL* has the following form:
+
+![Equation 3](https://github.com/txzhao/Paper-Notes/blob/master/RL/fig/egan-eq3.PNG)
+
+**EGAN structure**
+
+![egan](https://github.com/txzhao/Paper-Notes/blob/master/RL/fig/egan-struct.PNG)
+
+
+
 
