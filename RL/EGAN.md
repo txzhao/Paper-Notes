@@ -43,4 +43,13 @@ where the regularization term *D\_KL* has the following form:
 
 ![egan-algo](https://github.com/txzhao/Paper-Notes/blob/master/RL/fig/egan-pseudocode.PNG)
 
+The enhancer is fed with training data *D\_r(s\_t, a)* and *D\_r(s\_{t+1}, r)*, and trained by supervised learning. After GAN generates synthetic data *D\_t(s\_t, a, s\_{t+1}, r)*, the enhancer could enhance the dependency between *D\_t(s\_t, a)* and *D\_t(s\_{t+1}, r)* and update the weights of GAN.
+
+## Results
+
+two lines of experiments on CartPole environment involved with PG agents: 
+
+1. one for comparing the learning curves of agents with no pre-training, GAN pre-training and EGAN pre-training. => Result: EGAN > GAN > no pre-training
+
+2. one for comparing the learning curves of agents with EGAN pre-training for various episodes (500, 2000, 5000). => Result: 5000 > 2000 ~= 500
 
