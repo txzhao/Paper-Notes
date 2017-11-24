@@ -7,3 +7,4 @@
 
 ## Introduction
 
+- How to achieve: implicitly modelling high-dimensional distributions of data
