@@ -20,15 +20,10 @@
 
 *changes from DQN:* evaluate greedy policy by online network, but estimate value by target network
 
-| DQN | ![dqn-greedy-policy-1](https://github.com/txzhao/Paper-Notes/blob/master/RL/fig/dqn-greedy-policy-1.PNG) <=> ![dqn-greedy-policy-2](https://github.com/txzhao/Paper-Notes/blob/master/RL/fig/dqn-greedy-policy-2.PNG) |
+|**DQN**|![dqn-greedy-policy-1](https://github.com/txzhao/Paper-Notes/blob/master/RL/fig/dqn-greedy-policy-1.PNG) <=> ![dqn-greedy-policy-2](https://github.com/txzhao/Paper-Notes/blob/master/RL/fig/dqn-greedy-policy-2.PNG)|
 |:------:|:------:|
-|    D-DQN   |    ![ddqn-greedy-policy](https://github.com/txzhao/Paper-Notes/blob/master/RL/fig/ddqn-greedy-policy.PNG)    |
+|**D-DQN**|![ddqn-greedy-policy](https://github.com/txzhao/Paper-Notes/blob/master/RL/fig/ddqn-greedy-policy.PNG)|
 
-DQN:
-![dqn-greedy-policy-1](https://github.com/txzhao/Paper-Notes/blob/master/RL/fig/dqn-greedy-policy-1.PNG) <=> ![dqn-greedy-policy-2](https://github.com/txzhao/Paper-Notes/blob/master/RL/fig/dqn-greedy-policy-2.PNG)
-
-D-DQN: 
-![ddqn-greedy-policy](https://github.com/txzhao/Paper-Notes/blob/master/RL/fig/ddqn-greedy-policy.PNG)
 
 
 
