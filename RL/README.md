@@ -9,3 +9,5 @@
 (TODO) **[4]** Hester, Todd, et al. "**Learning from Demonstrations for Real World Reinforcement Learning.**" arXiv preprint arXiv:1704.03732 (2017). [[paper]](https://arxiv.org/abs/1704.03732) [[note]](https://github.com/txzhao/Paper-Notes/blob/master/RL/DQfD.md)
 
 (HALF) **[5]** Li, Yuxi. "**Deep reinforcement learning: An overview.**" arXiv preprint arXiv:1701.07274 (2017). [[paper]](https://arxiv.org/abs/1701.07274) [[note]](https://github.com/txzhao/Paper-Notes/blob/master/RL/drl_overview.md)
+
+(TODO) **[6]** Sutton, Richard S. "**Dyna, an integrated architecture for learning, planning, and reacting.**" ACM SIGART Bulletin 2.4 (1991): 160-163. [[paper]](https://pdfs.semanticscholar.org/47b4/987a82c4380e2c27e52603b5aaabe7cea59f.pdf) [[note]](https://github.com/txzhao/Paper-Notes/blob/master/RL/dyna.md)
