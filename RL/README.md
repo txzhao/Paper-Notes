@@ -13,3 +13,5 @@
 (TODO) **[6]** Sutton, Richard S. "**Dyna, an integrated architecture for learning, planning, and reacting.**" ACM SIGART Bulletin 2.4 (1991): 160-163. [[paper]](https://pdfs.semanticscholar.org/47b4/987a82c4380e2c27e52603b5aaabe7cea59f.pdf) [[note]](https://github.com/txzhao/Paper-Notes/blob/master/RL/dyna.md)
 
 (TODO) **[7]** Xiu, Ruoyang, and John Evans. "**Workload Engineering: Optimising WAN and DC Resources Through RL-Based Workload Placement.**" arXiv preprint arXiv:1703.06967 (2017). [[paper]](https://arxiv.org/abs/1703.06967) [[note]](https://github.com/txzhao/Paper-Notes/blob/master/RL/rl_workload_placement.md)
+
+(TODO) **[8]** Li, Yunzhu, Jiaming Song, and Stefano Ermon. "**InfoGAIL: Interpretable Imitation Learning from Visual Demonstrations.**" Advances in Neural Information Processing Systems. 2017. [[paper]](http://papers.nips.cc/paper/6971-infogail-interpretable-imitation-learning-from-visual-demonstrations) [[note]](https://github.com/txzhao/Paper-Notes/blob/master/RL/InfoGAIL.md)
