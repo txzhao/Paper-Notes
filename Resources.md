@@ -11,6 +11,11 @@ Some good learning materials
 
 - UCL Course on RL [[link]](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html)
 - CS 294: Deep Reinforcement Learning [[link]](http://rll.berkeley.edu/deeprlcourse/)
+- Dynamic Programming and Optimal Control [[link]](http://www.athenasc.com/dpbook.html)
+
+### Tutorials
+
+- Reinforcement Learning - Morvan [[link]](https://morvanzhou.github.io/tutorials/machine-learning/reinforcement-learning/)
 
 ### Blogs and Links
 
@@ -18,4 +23,3 @@ Some good learning materials
 - DeepMind [[link]](https://deepmind.com/)
 - Tensorforce Blog [[link]](https://reinforce.io/blog/)
 - Deep Learning Weekly [[link]](https://www.deeplearningweekly.com/)
-
