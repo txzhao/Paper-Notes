@@ -31,7 +31,7 @@ more frequently replay transitions with high expected learning progress, as meas
 
 **stochastic sampling:**
 
-![](https://github.com/txzhao/Paper-Notes/blob/master/RL/fig/PER-eq1.PNG)
+![eq1](https://github.com/txzhao/Paper-Notes/blob/master/RL/fig/PER-eq1.png)
 
 *p_i* > 0: priority of transition *i*; 0 <= *alpha* <= 1 determines how much prioritization is used.
 
@@ -40,5 +40,5 @@ more frequently replay transitions with high expected learning progress, as meas
 1. proportional prioritization: *p_i* = abs(TD\_error\_i) + epsilon (small positive constant to avoid zero prob)
 2. rank-based prioritization: *p_i* = 1/rank(*i*); **more robust as it is insensitive to outliers**
 
-![](https://github.com/txzhao/Paper-Notes/blob/master/RL/fig/DDQN_PER.PNG)
+![code1](https://github.com/txzhao/Paper-Notes/blob/master/RL/fig/DDQN_PER.PNG)
 
