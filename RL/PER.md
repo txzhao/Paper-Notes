@@ -42,3 +42,9 @@ more frequently replay transitions with high expected learning progress, as meas
 
 ![code1](https://github.com/txzhao/Paper-Notes/blob/master/RL/fig/DDQN_PER.png)
 
+**importance sampling:**
+
+IS weights: ![eq1](https://github.com/txzhao/Paper-Notes/blob/master/RL/fig/PER-eq2.png) 
+
+- weights can be folded into the Q-learning update by using w\_i*delta\_i instead of delta\_i
+- weights normalized by 1/max w\_i
