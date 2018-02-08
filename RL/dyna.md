@@ -21,7 +21,7 @@ planning is 'trying things in your head' using an internal model of the world
 
 input: state, action; output: immediate resulting state and reward
 
-search control : how to select hypothetical state and action
+search control: how to select hypothetical state and action
 
 ## Potential problems
 
